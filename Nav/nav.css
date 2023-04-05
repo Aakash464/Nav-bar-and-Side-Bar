@@ -1,0 +1,223 @@
+*{
+    margin: 0%;
+    list-style: none;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    background: #e1ecf2;
+}
+
+.wrapper .top-navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+   position: fixed;
+    top: 0%;
+    z-index: 15;
+}
+
+.wrapper .top-navbar .hamburger{
+    width: 70px;
+    height: 100%;
+    background: #314579;
+    padding: 15px 17px;
+    cursor: pointer;
+}
+
+.wrapper .top-navbar .hamburger div{
+    width: 35px;
+    height:4px;
+    background-color: #eee;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.wrapper .top-navbar .top-menu{
+    width: calc(100% - 70px);
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+.wrapper .top-navbar .top-menu .logo{
+
+    color: #314579;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.wrapper .top-navbar .top-menu ul{
+    display: flex;
+}
+
+.wrapper .top-navbar .top-menu input{
+    padding-left: 10px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.wrapper .top-navbar .top-menu ul li a{
+    display: block;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #314579;
+    text-align: center;
+    border-radius: 50%;
+    color: #314579;
+}
+.wrapper .top-navbar .top-menu ul li a:hover{
+    background: #314579;
+    color: #fff;
+}
+
+.wrapper .sidebar{
+    margin: 0%;
+    padding-top: 0%;
+    position: fixed;
+    top: 60px;
+    background-color: #314579;
+    width: 220px;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    transition: all 0.4s ease-in;
+    overflow: hidden;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 1px;
+    white-space: nowrap;
+}
+
+.wrapper .sidebar ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 3px;
+    background: #fff;
+    display: none;
+}
+
+.wrapper .sidebar ul li a span.icon{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a span.title{
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    background-color: #fff;
+    color: #314579;
+    transition: all 0.2s ease;
+}
+
+.wrapper .sidebar ul li a:hover::before
+.wrapper .sidebar ul li a.active::before{
+    display: block;
+}
+
+.wrapper .main-container{
+    width: calc(100% - 200px);
+    margin-top: 60px;
+    margin-left: 220px;
+    padding: 0%;
+    transition: all 0.3s ease;
+}
+
+.wrapper .main-container .customer-support{
+    background-color: #362FD9;
+    width: 100%;
+    height: 60%;
+    position: fixed;
+    z-index: 5;
+    transition: all 0.4s ease-in;
+}
+
+.wrapper .main-container .item{
+    position: absolute;
+    margin: auto;
+    transition: all 0.4s ease-in;
+    background-color: white;
+    width: 75%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 5%;
+    z-index: 1;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+/* .wrapper .main-container .item form{
+    padding-top: 10px;
+}
+.wrapper .main-container .item form input{
+    width: 350px;
+    padding-left: 10px;
+}
+.wrapper .main-container .item form select{
+    width: 350px;
+    padding-left: 10px;
+}
+.wrapper .main-container .item form button{
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #314579;
+    color: #fff;
+    transition: .4s;
+}
+.wrapper .main-container .item form button:hover{
+
+    background-color: #fff;
+    color: #314579;
+} */
+
+
+
+
+.wrapper.collapse .sidebar{
+    width: 70px;
+    overflow: hidden;
+}
+
+.wrapper.collapse .sidebar ul li a{
+    text-align: center;
+}
+
+.wrapper.collapse .sidebar ul li a span.icon{
+    margin: 0%;
+}
+
+.wrapper.collapse .sidebar ul li a span.title{
+    display: none;
+}
+
+.wrapper.collapse .main-container .item{
+    position: absolute;
+    margin: auto;
+    background-color: white;
+    width: 75%;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 0.025%;
+    transition: all 0.4s ease-in;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
